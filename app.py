@@ -52,10 +52,3 @@ if show_pie:
 
 col2.plotly_chart(fig_pie, use_container_width=True)
 
-
-# Set up the page
-
-
-
-# Codes for plotting
-
