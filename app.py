@@ -7,7 +7,7 @@ st.set_page_config(page_title="Medals Visualization", layout="wide")
 st.title("Medals Visualization")
 
 # Dropdown menu
-medal = st.selectbox("Medal type", ["gold", 'silver', 'bronze'])
+medal = st.selectbox("Medal type", ['gold', 'silver', 'bronze'])
 
 # checkboxes
 show_bar = st.checkbox("Show Bar Chart", value=True)
@@ -25,7 +25,7 @@ if show_bar:
       df,
       x="nation",
       y=f"{medal}",
-      title = f"Medals count ({medal})"
+      title = "Medals count"
   )
 
 fig_bar.update_layout(
